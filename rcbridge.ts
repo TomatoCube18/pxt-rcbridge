@@ -33,7 +33,7 @@ enum CTRL_PROT {
 //% weight=100 color=#0fbc12 icon="\uf2ce" block="RCBridge"
 
 namespace RCBRIDGE {
-    //% block="Send a RC pattern %rcpattern using protocol %protocol with length %bitlength at a pulse length of %pulselength milliseconds" 
+    //% block="Send a RC pattern %rcpattern with length %bitlength at a pulse length of (milliseconds) %pulselength using protocol %protocol" 
     //% rcpattern.defl=4527884 bitlength.defl=24 pulselength.defl=193 protocol.defl=1
     export function setPattern(rcpattern: number, bitlength: number, pulselength: number, protocol: CTRL_PROT) {
 
