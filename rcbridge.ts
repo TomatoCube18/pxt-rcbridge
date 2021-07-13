@@ -68,7 +68,7 @@ namespace RCBRIDGE {
             _pulselength = parseInt(receivedString.substr(receivedString.indexOf("!") + 1, receivedString.indexOf(";") - receivedString.indexOf("!") - 1),10)
             _bitlength = parseInt(receivedString.substr(receivedString.indexOf(";") + 1, receivedString.indexOf(",") - receivedString.indexOf(";") - 1),10)
             _protocol = parseInt(receivedString.substr(receivedString.indexOf(",") + 1, receivedString.indexOf(".") - receivedString.indexOf(",") - 1),10)
-            _rcpattern = parseInt(receivedString.substr(receivedString.indexOf(".") + 1, receivedString.length() - receivedString.indexOf(".") - 1),10)
+            _rcpattern = parseInt(receivedString.substr(receivedString.indexOf(".") + 1, receivedString.length - receivedString.indexOf(".") - 1),10)
             return true
         }
         else {
